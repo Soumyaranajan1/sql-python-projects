@@ -17,7 +17,7 @@ while True:
     # Database connection
     try:
         passwd = input("ENTER THE DATABASE PASSWORD: ")
-        db = mysql.connector.connect(host="localhost", user="root", passwd="soumya@123", auth_plugin='caching_sha2_password')
+        db = mysql.connector.connect(host="localhost", user="root", passwd="enter your database password", auth_plugin='caching_sha2_password')
         cursor = db.cursor()
         cursor.execute("CREATE DATABASE IF NOT EXISTS railway_management")
         cursor.execute("USE railway_management")
